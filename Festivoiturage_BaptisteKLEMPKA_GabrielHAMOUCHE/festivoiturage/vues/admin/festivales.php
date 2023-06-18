@@ -25,8 +25,7 @@
         <a href="./index.php"> < Retour</a>
     </div>
     <div class="flash-message" style="text-align: center;margin: 10px auto;color: green;">
-        <!-- le messages de confirmation d'ajout d'une association va s'afficher ici -->
-        <!-- vous pouvez changer le css du div ci-dessus selon vos préférences-->
+
         <?php 
             if(isset($_SESSION['message'])) {
                 echo $_SESSION['message'];
