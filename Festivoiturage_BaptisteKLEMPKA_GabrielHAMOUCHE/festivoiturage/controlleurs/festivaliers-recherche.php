@@ -24,7 +24,7 @@
     where festivaliers.datePresence = "' . $datePresence . '" or annoncesvehicules.dateAller = "' . $dateAller . 
     '" or annoncesvehicules.dateRetour = "' . $dateRetour . '"');
 
-    //echo var_dump($festivaliers);
+    
 
     header("Location: ../vues/festivaliers-resultat-recherche.php");
 
