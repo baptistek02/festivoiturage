@@ -10,7 +10,7 @@
         if($_GET['id'] !== null){
             $idFestivale = $_GET['id'];
             
-            //delete book image from server
+            
             $requete1 = $mysql->prepare('select * from festivals where id = ?');
             $requete1->bind_param('i', $idFestivale);
             $requete1->execute();
@@ -18,11 +18,11 @@
             $festivale = $row->fetch_assoc();
             $requete1->close();
 
-            //create file path
+            
             $image_name = $festivale['photo'];
             $file_path = "../../imagesFestivales/$image_name";
 
-            // check if file path exists
+            
             if(file_exists($file_path)){
                 if(unlink($file_path)){
                     //delete book from database
