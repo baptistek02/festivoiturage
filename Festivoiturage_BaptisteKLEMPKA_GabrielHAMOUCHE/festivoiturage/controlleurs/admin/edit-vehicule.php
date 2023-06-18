@@ -8,7 +8,7 @@
     // modification d'une annonce véhicule
 
     if(isset($_POST['id'])) {
-        //data from the form
+        
         $idVehicule = $_POST['id'];
         $type = trim($_POST['type']);
         $placeDisponibles = trim($_POST['placeDisponibles']);
